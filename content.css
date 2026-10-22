@@ -1,0 +1,53 @@
+/* DEVEN WEEDEN 2026 */
+/* tourist styles */
+#st-box {
+  --dk: #8c6038;
+  --sh: #6b4828;
+  --hi: #d4a870;
+  --tx: #f0e6d0;
+  position: fixed;
+  bottom: 0;
+  z-index: 999999;
+}
+
+#st-spr {
+  cursor: pointer;
+  background-repeat: no-repeat;
+  image-rendering: pixelated;
+}
+
+/* speech bubble styles */
+#st-bub {
+  position: absolute;
+  bottom: calc(100% + 14px);
+  left: 50%;
+  width: max-content;
+  max-width: 200px;
+  padding: 8px 10px;
+  background: var(--dk);
+  color: var(--tx);
+  font: 12px/1.4 sans-serif;
+  border: 3px solid;
+  border-color: var(--hi) var(--sh) var(--sh) var(--hi);
+  text-shadow: 1px 1px 0 rgba(0,0,0,0.25);
+  pointer-events: none;
+  opacity: 0;
+  transform: translate(-50%, 10px);
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+#st-bub.on {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+
+#st-bub::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  margin-left: -6px;
+  border: 6px solid transparent;
+  border-top: 8px solid var(--dk);
+  border-bottom: 0;
+}

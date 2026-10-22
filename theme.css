@@ -1,0 +1,23 @@
+/*DEVEN WEEDEN 2026*/
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&family=Press+Start+2P&display=swap');
+
+:root {
+  --bg: #b08050;
+  --dk: #8c6038;
+  --sh: #6b4828;
+  --hi: #d4a870;
+  --tx: #f0e6d0;
+  --red: #e03030;
+  --rhi: #ff6060;
+  --rsh: #a01818;
+  --up: var(--hi) var(--sh) var(--sh) var(--hi);
+  --dn: var(--sh) var(--hi) var(--hi) var(--sh);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Silkscreen', monospace;
+  color: var(--tx);
+  image-rendering: pixelated;
+}
